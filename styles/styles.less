@@ -38,3 +38,130 @@
 	--cl-pale: #E0E8FF;
 	--cl-light: #F7F9FF;
 }
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+}
+
+.top-wrapper {
+	display: grid;
+	align-content: center;
+	margin: 0;
+	min-height: 100svh;
+	background: var(--cl-pale);
+	font: var(--ty-copy);
+	color: var(--cl-desaturated);
+}
+
+.summary-card {
+	display: grid;
+	width: 90%;
+	max-width: 20.438rem;
+	margin: auto;
+	border-radius: 1.25rem;
+	background: white;
+	box-shadow: 0 1.563rem 3.125rem -1.25rem rgba(13, 48, 189, .1518);
+	transition: max-width .3s ease-out;
+	
+	@media (min-width: 60rem) {
+		max-width: 28.125rem;
+	}
+}
+
+.summary-card__image {
+	border-radius: 1.25rem 1.25rem 0 0;
+	margin-bottom: 2rem;
+}
+
+.summary-card__heading {
+	font: var(--ty-heading);
+	color: var(--cl-dark);
+	text-align: center;
+	margin: 0 0 1rem;
+	padding: 0 2rem;
+}
+
+.summary-card__main-wrapper {
+	display: grid;
+	padding: 0 2rem 1.25rem;
+}
+
+.summary-card__description {
+	text-align: center;
+	margin: 0 0 1.5rem;
+}
+
+.summary-card__subscription-option {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 1.25rem;
+	background: var(--cl-light);
+	border-radius: .688rem;
+	padding: 1rem;
+	margin: 0 0 1.5rem;
+}
+
+.summary-card__subscription-opted-info {
+	flex-grow: 1;
+	display: grid;
+	gap: .25rem;
+	margin: 0;
+}
+
+.summary-card__subscription-opted-plan {
+	font: var(--ty-subscription-type);
+	color: var(--cl-dark);
+}
+
+.summary-card__subscription-opted-price {
+	font: var(--ty-price);
+}
+
+.summary-card__subscription-change-link {
+	font: var(--ty-change-link);
+	color: var(--cl-bright);
+}
+
+.summary-card__button {
+	font: var(--ty-button);
+	border: 0;
+	border-radius: .688rem;
+}
+
+.summary-card__button--primary {
+	background: var(--cl-bright);
+	color: white;
+	margin: 0 0 1rem;
+	padding: .938rem .75rem;
+	box-shadow: 0 1.25rem 1.25rem 0 rgba(56, 42, 225, .1903);
+}
+
+.summary-card__button--secondary {
+	background: transparent;
+	color: var(--cl-desaturated);
+	padding: .938rem .75rem;
+}
+
+.signature {
+	position: absolute;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
