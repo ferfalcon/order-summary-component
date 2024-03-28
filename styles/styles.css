@@ -7,7 +7,7 @@
   --fs-copy: 0.938rem;
   --fs-medium: 0.875rem;
   --fs-small: 0.813rem;
-  --copy-line-height: 1.67;
+  --copy-line-height: 1.667;
   --ty-heading: var(--fw-black) var(--fs-heading) var(--ff-main);
   --ty-copy: var(--fw-medium) var(--fs-copy)/var(--copy-line-height) var(--ff-main);
   --ty-subscription-type: var(--fw-black) var(--fs-medium) var(--ff-main);
@@ -19,5 +19,15 @@
   --cl-desaturated: #717FA6;
   --cl-pale: #E0E8FF;
   --cl-light: #F7F9FF;
+}
+@media (min-width: 60rem) {
+  :root {
+    --fs-heading: 1.75rem;
+    --fs-copy: 1rem;
+    --fs-medium: 0.938rem;
+    --fs-small: 0.875rem;
+    --copy-line-height: 1.625;
+    --ty-button: var(--fw-black) var(--fs-medium) var(--ff-main);
+  }
 }
 /*# sourceMappingURL=./styles.css.map */

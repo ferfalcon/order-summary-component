@@ -11,7 +11,7 @@
 	--fs-medium: .875rem;
 	--fs-small: .813rem;
 
-	--copy-line-height: 1.67;
+	--copy-line-height: 1.667;
 
 	--ty-heading: var(--fw-black) var(--fs-heading) var(--ff-main);
 	--ty-copy: var(--fw-medium) var(--fs-copy)/var(--copy-line-height) var(--ff-main);
@@ -19,6 +19,17 @@
 	--ty-price: var(--fw-medium) var(--fs-medium) var(--ff-main);
 	--ty-change-link: var(--fw-bold) var(--fs-small) var(--ff-main);
 	--ty-button: var(--fw-black) var(--fs-copy) var(--ff-main);
+
+	@media (min-width:60rem) {
+		--fs-heading: 1.75rem;
+		--fs-copy: 1rem;
+		--fs-medium: .938rem;
+		--fs-small: .875rem;
+	
+		--copy-line-height: 1.625;
+
+		--ty-button: var(--fw-black) var(--fs-medium) var(--ff-main);
+	}
 
 	// Colours
 	--cl-dark: #1F2E55;
