@@ -1,1 +1,23 @@
+:root {
+  --ff-main: "Red Hat Display", sans-serif;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+  --fs-heading: 1.375rem;
+  --fs-copy: 0.938rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.813rem;
+  --copy-line-height: 1.67;
+  --ty-heading: var(--fw-black) var(--fs-heading) var(--ff-main);
+  --ty-copy: var(--fw-medium) var(--fs-copy)/var(--copy-line-height) var(--ff-main);
+  --ty-subscription-type: var(--fw-black) var(--fs-medium) var(--ff-main);
+  --ty-price: var(--fw-medium) var(--fs-medium) var(--ff-main);
+  --ty-change-link: var(--fw-bold) var(--fs-small) var(--ff-main);
+  --ty-button: var(--fw-black) var(--fs-copy) var(--ff-main);
+  --cl-dark: #1F2E55;
+  --cl-bright: #382AE1;
+  --cl-desaturated: #717FA6;
+  --cl-pale: #E0E8FF;
+  --cl-light: #F7F9FF;
+}
 /*# sourceMappingURL=./styles.css.map */
