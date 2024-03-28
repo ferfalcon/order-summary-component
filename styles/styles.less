@@ -34,6 +34,7 @@
 	// Colours
 	--cl-dark: #1F2E55;
 	--cl-bright: #382AE1;
+	--cl-medium: #766CF1;
 	--cl-desaturated: #717FA6;
 	--cl-pale: #E0E8FF;
 	--cl-light: #F7F9FF;
@@ -134,12 +135,19 @@ img {
 .summary-card__subscription-change-link {
 	font: var(--ty-change-link);
 	color: var(--cl-bright);
+	transition: color .2s ease-out;
+
+	&:hover {
+		color: var(--cl-medium);
+		text-decoration: none;
+	}
 }
 
 .summary-card__button {
 	font: var(--ty-button);
 	border: 0;
 	border-radius: .688rem;
+	cursor: pointer;
 }
 
 .summary-card__button--primary {
@@ -147,13 +155,23 @@ img {
 	color: white;
 	margin: 0 0 1rem;
 	padding: .938rem .75rem;
+	transition: background .2s ease-out;
 	box-shadow: 0 1.25rem 1.25rem 0 rgba(56, 42, 225, .1903);
+	
+	&:hover {
+		background: var(--cl-medium) ;
+	}
 }
 
 .summary-card__button--secondary {
 	background: transparent;
 	color: var(--cl-desaturated);
 	padding: .938rem .75rem;
+	transition: color .2s ease-out;
+
+	&:hover {
+		color: var(--cl-dark) ;
+	}
 }
 
 .signature {
