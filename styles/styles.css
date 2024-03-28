@@ -50,9 +50,16 @@ img {
   align-content: center;
   margin: 0;
   min-height: 100svh;
-  background: var(--cl-pale);
+  background: var(--cl-pale) no-repeat center top;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: contain;
   font: var(--ty-copy);
   color: var(--cl-desaturated);
+}
+@media (min-width: 60rem) {
+  .top-wrapper {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
 }
 .summary-card {
   display: grid;
