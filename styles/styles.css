@@ -80,9 +80,19 @@ img {
   margin: 0 0 1rem;
   padding: 0 2rem;
 }
+@media (min-width: 60rem) {
+  .summary-card__heading {
+    padding: 0 3rem;
+  }
+}
 .summary-card__main-wrapper {
   display: grid;
   padding: 0 2rem 1.25rem;
+}
+@media (min-width: 60rem) {
+  .summary-card__main-wrapper {
+    padding: 0 3rem 2rem;
+  }
 }
 .summary-card__description {
   text-align: center;
@@ -97,6 +107,11 @@ img {
   border-radius: 0.688rem;
   padding: 1rem;
   margin: 0 0 1.5rem;
+}
+@media (min-width: 60rem) {
+  .summary-card__subscription-option {
+    padding: 1.5rem;
+  }
 }
 .summary-card__subscription-opted-info {
   flex-grow: 1;
@@ -136,6 +151,11 @@ img {
 }
 .summary-card__button--primary:hover {
   background: var(--cl-medium);
+}
+@media (min-width: 60rem) {
+  .summary-card__button--primary {
+    margin: 0 0 1.5rem;
+  }
 }
 .summary-card__button--secondary {
   background: transparent;
